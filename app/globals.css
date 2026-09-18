@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --blite-bg: #07030e;
+  --blite-obsidian: #0b0516;
+  --blite-surface: #170c2c;
+  --blite-purple: #8b2fc9;
+  --blite-violet: #9d4edd;
+  --blite-pink: #ec1380;
+  --blite-magenta: #ff2a8d;
+  --blite-border: rgba(236, 19, 128, 0.14);
+  --blite-border-purple: rgba(157, 78, 221, 0.22);
+  --blite-platinum: #f9f8fc;
+  --blite-silver: #e3dcf0;
+  --blite-steel: #9c8fa8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--blite-bg);
+  color: var(--blite-platinum);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  background-color: var(--blite-bg);
+  color: var(--blite-platinum);
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: rgba(236, 19, 128, 0.35);
+  color: #ffffff;
+}
+
+/* Lenis Recommended CSS */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+/* Subtle Cinematic Film Grain */
+.film-grain {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 999;
+  opacity: 0.038;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Dark Purple & Amethyst Glassmorphic Panels */
+.glass-panel {
+  background: rgba(18, 9, 34, 0.68);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(157, 78, 221, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(11, 3, 22, 0.37);
+}
+
+.glass-pill {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(236, 19, 128, 0.22);
+}
+
+/* Brand Gradient Text Accents */
+.text-gradient-purple {
+  background: linear-gradient(135deg, #ffffff 0%, #d8b4fe 45%, #a855f7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-pink {
+  background: linear-gradient(135deg, #ff60b0 0%, #ec1380 50%, #9d4edd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-silver {
+  background: linear-gradient(180deg, #ffffff 0%, #c4b8d4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom Sleek Dark Violet Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #07030e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2b1348;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8b2fc9;
+}
+
