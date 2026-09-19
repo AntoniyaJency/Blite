@@ -101,7 +101,7 @@ export default function SiteFooter() {
               <br />
               Royapettah, Chennai 600014
             </p>
-            <p className="mt-4 text-sm text-blite-steel">Mon–Sat · 6AM – 10PM</p>
+            <p className="mt-4 text-sm text-blite-steel">Mon–Sat · 6AM – 9PM</p>
             <a
               href="mailto:hello@blite.com"
               className="mt-2 inline-block text-sm text-white hover:text-blite-pink transition-colors"
